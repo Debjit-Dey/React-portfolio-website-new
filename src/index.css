@@ -1,0 +1,62 @@
+@import "tailwindcss";
+
+@theme {
+  --color-ocean-blue: oklch(0.43 0.17 259); /* #0D5EA6 */
+  --color-gold-orange: oklch(0.75 0.19 78); /* #EAA64D */
+  --color-burnt-ochre: oklch(0.68 0.18 70); /* #C78A3B */
+  --color-deep-bronze: oklch(0.55 0.18 70); /* #A16D28 */
+}
+@theme {
+  /* Keyframes definitions */
+  @keyframes pulseColor {
+    0%,
+    100% {
+      background-color: #0d5ea6;
+    }
+    50% {
+      background-color: #003f70;
+    }
+  }
+
+  @keyframes floatY {
+    0%,
+    100% {
+      transform: translateY(0px);
+    }
+    50% {
+      transform: translateY(-20px);
+    }
+  }
+
+  /* Animation utilities, referencing the keyframes */
+  --animate-pulseColor: pulseColor 6s infinite ease-in-out;
+  --animate-floatY: floatY 4s ease-in-out infinite;
+}
+
+@theme {
+  /* Keyframes definition */
+  @keyframes scrollX {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
+  }
+
+  /* Animation utility, referencing the keyframe */
+  --animate-scroll-x: scrollX 30s linear infinite;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-marquee {
+  animation: marquee 30s linear infinite;
+}
