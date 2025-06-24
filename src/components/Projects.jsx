@@ -16,7 +16,8 @@ const allProjects = [
       "https://github.com/Debjit-Dey/PaisaPartner--Finance-Management-Website",
   },
   {
-    title: "💵  Namaste Bugs - Expense Management Web Application",
+    title:
+      "💵  Namaste Bugs - project tracking and management website like Jira",
     desc: "A modern and responsive project management tool for tracking bugs, managing tasks, and collaborating with team members seamlessly.",
     tech: ["React.js", "Node.js", "Express", "MongoDB", "Recharts"],
     gif: "/gifs/project.png",
