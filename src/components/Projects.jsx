@@ -30,7 +30,7 @@ const allProjects = [
     desc: "A complete Shop Management Website for handling product listings, transactions, and inventory with a user-friendly dashboard.",
     tech: ["React.js", "Node.js", "Express", "MongoDB", "Recharts"],
     gif: "/gifs/shop.png",
-    live: "https://shop-management-delta.vercel.app/login",
+    live: "https://shop-management-delta.vercel.app",
     github: "https://github.com/Debjit-Dey/shop-management",
   },
   {
